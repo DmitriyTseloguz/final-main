@@ -11,7 +11,8 @@ jobs:
 
       - name: Vet
         run: |
-          go vet ./... 
+          go vet ./...
+          
 deploy:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
